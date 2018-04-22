@@ -1,4 +1,4 @@
-package JavaSyntax.task07.task0701;
+package JavaRush.JavaSyntax.task07.task0701;
 
 /*
 Массивный максимум
@@ -11,6 +11,7 @@ package JavaSyntax.task07.task0701;
         2. Метод initializeArray должен считать 20 чисел и вернуть их в виде массива.
         3. Метод max должен возвращать максимальный элемент из переданного массива.
         4. Метод main изменять нельзя.
+        Решена!
 */
 
 import java.io.BufferedReader;
