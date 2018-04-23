@@ -1,4 +1,4 @@
-package JavaRush.JavaSyntax.task07.task0701;
+package JavaRush.JavaSyntax.task07;
 
 /*
 Массивный максимум
@@ -22,7 +22,7 @@ import java.io.InputStreamReader;
 Массивный максимум
 */
 
-public class Solution {
+public class Solution0701 {
     public static void main(String[] args) throws Exception {
         int[] array = initializeArray();
         int max = max(array);
