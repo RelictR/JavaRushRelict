@@ -28,8 +28,12 @@ public class Solution0708 {
         for (int i = 0; i < 5; i++) {
             strings.add(reader.readLine());
         }
+        String i = "";
         for (String s : strings) {
-
+            if (s.length () > i.length () || s.length () == i.length ()) {
+                i = s;
+                System.out.println (i);
+                }
             }
     }
 }
