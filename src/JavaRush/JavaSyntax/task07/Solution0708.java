@@ -28,12 +28,15 @@ public class Solution0708 {
         for (int i = 0; i < 5; i++) {
             strings.add(reader.readLine());
         }
-        String i = "";
+        int maxLength = 0;
         for (String s : strings) {
-            if (s.length () > i.length () || s.length () == i.length ()) {
-                i = s;
-                System.out.println (i);
-                }
+            if (s.length() > maxLength)
+                maxLength = s.length();
+        }
+        for (String s : strings){
+            if (s.length() == maxLength){
+                System.out.println(s);
             }
+        }
     }
 }

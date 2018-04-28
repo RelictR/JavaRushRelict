@@ -23,17 +23,19 @@ import java.util.ArrayList;
 public class Solution0709 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
-        ArrayList<String> strings = new ArrayList<> ();
-        BufferedReader reader = new BufferedReader(new InputStreamReader (System.in));
+        ArrayList<String> strings = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; i < 5; i++) {
             strings.add(reader.readLine());
         }
-        String i = null;
+        int minLength = strings.get(0).length();
+        for (String s : strings){
+            if (s.length() < minLength)
+                minLength = s.length();
+        }
         for (String s : strings) {
-            if (i.length () < s.length () || i.length () == s.length ()) {
-                i = s;
-                System.out.println (s);
-            }
+            if (minLength == s.length())
+                System.out.println(s);
         }
     }
 }
