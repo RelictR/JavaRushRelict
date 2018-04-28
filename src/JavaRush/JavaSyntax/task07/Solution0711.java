@@ -17,7 +17,7 @@ package JavaRush.JavaSyntax.task07;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//работает
 public class Solution0711 {
     public static void main(String[] args) throws Exception {
         //напишите тут ваш код
@@ -26,7 +26,11 @@ public class Solution0711 {
         for (int i = 0; i < 5; i++) {
             list.add(scanner.nextLine());
         }
-        list.set(0,list.get(4));
-        System.out.println(list);
+        for (int i = 0; i < 13; i++) {
+            list.add(0, list.remove(4));
+        }
+        for (String s : list){
+            System.out.println(s);
+        }
     }
 }
